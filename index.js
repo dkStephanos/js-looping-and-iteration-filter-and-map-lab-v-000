@@ -22,3 +22,16 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 
   return collection
 }
+
+function exactMatch(drivers, match) {
+  const collection = [];
+  const key = match.keys.first
+  
+  for (const driver of drivers) {
+    if (driver.revenue > revenue) {
+      collection.push(driver)
+    }
+  }
+
+  return collection
+}
