@@ -35,3 +35,16 @@ function exactMatch(drivers, match) {
 
   return collection
 }
+
+function exactMatchToList(drivers, match) {
+  const collection = [];
+  const key = Object.keys(match)[0]
+
+  for (const driver of drivers) {
+    if (driver[key] === match[key]) {
+      collection.push(driver.name)
+    }
+  }
+
+  return collection
+}
