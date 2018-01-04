@@ -28,7 +28,7 @@ function exactMatch(drivers, match) {
   const key = Object.keys(match)[0]
 
   for (const driver of drivers) {
-    if (driver[key] === mathc[key]) {
+    if (driver[key] === match[key]) {
       collection.push(driver)
     }
   }
