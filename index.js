@@ -10,3 +10,15 @@ function driversWithRevenueOver(drivers, revenue) {
 
   return collection
 }
+
+function driverNamesWithRevenueOver(drivers, revenue) {
+  const collection = [];
+
+  for (const driver of drivers) {
+    if (driver.revenue > revenue) {
+      collection.push(driver.name)
+    }
+  }
+
+  return collection
+}
